@@ -1,0 +1,181 @@
+:root {
+  --clr-purple-100: hsl(254, 88%, 90%);
+  --clr-purple-500: hsl(256, 67%, 59%);
+
+  --clr-yellow-100: hsl(31, 66%, 93%);
+  --clr-yellow-500: hsl(39, 100%, 71%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 7%);
+
+  --font-family: 'DM Sans', sans-serif;
+  --fs-default: 1.125;
+  --fw-regular: 400;
+  --fw-medium: 500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.2;
+  background-color: var(--clr-white);
+  font-size: var(--fs-default);
+  color: var(--clr-black);
+  /* font-weight: var(--fw-regular); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile First Approach with utility classes */
+
+.container {
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.3rem;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+/* dark purple cards */
+
+.dark--purple {
+  background-color: var(--clr-purple-500);
+  color: var(--clr-white);
+  text-align: center;
+}
+
+.card-rating {
+  padding: 3rem;
+}
+
+.card-rating h1 {
+  font-size: 3rem;
+  text-wrap: balance;
+}
+
+.card-rating span {
+  color: var(--clr-yellow-500);
+  font-size: 3.2rem;
+}
+.card-rating img {
+  margin: 1rem auto 0.5rem auto;
+  width: 300px;
+}
+
+.card-growth {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 2.5rem;
+  font-weight: var(--fw-medium);
+}
+
+.card-growth img {
+  transform: translateY(-40px);
+  width: 350px;
+}
+
+/* end of dark purple cards */
+
+/* light white cards */
+
+.light--white {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  font-weight: var(--fw-medium);
+  padding: 1.2rem;
+}
+
+.light--white:has(span) img {
+  width: 240px;
+  margin-top: 1rem;
+}
+
+.light--white span {
+  font-size: 2.7rem;
+}
+/* end of light white cards */
+
+
+/* dark yellow cards */
+
+.dark--yellow {
+  background-color: var(--clr-yellow-500);
+  font-weight: var(--fw-medium);
+}
+
+.card-schedule {
+  font-size: 2.5rem;
+  padding: 1.4rem 4rem 1.4rem 1rem;
+  overflow: hidden;
+}
+
+.card-schedule img {
+  transform: translateY(50px);
+  width: 390px;
+}
+
+.card-ai {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+.card-ai img {
+  margin-top: 2rem;
+  width: 300px;
+}
+
+/* end of dark yellow cards */
+
+.light--purple {
+  background-color: var(--clr-purple-100);
+  text-align: center;
+  padding: 1.6rem 1.3rem;
+}
+
+.light--purple h2 {
+  font-size: 2rem;
+}
+
+.light--purple img {
+  margin: 1.2rem 0;
+}
+
+.light--purple p {
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+}
+
+.light--yellow {
+  background-color: var(--clr-yellow-100);
+  padding: 1.7rem 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.light--yellow span {
+  color: var(--clr-purple-500);
+  font-style: italic;
+}
+
+.light--yellow img {
+  width: 250px;
+  margin-top: 1.5rem;
+}
+
+
